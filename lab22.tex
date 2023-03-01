@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{ amssymb }
+\usepackage{ textcomp }
+\usepackage{ esint }
+\usepackage{ stmaryrd }
+\usepackage{geometry}
+\usepackage{ upgreek }
+\usepackage{ tipa }
+\geometry{papersize={22.3 cm,25.4 cm}}
+\geometry{left=3cm}
+\geometry{right=2.5cm}
+\geometry{top=1.8cm}
+\geometry{bottom=1.8cm}
+\setcounter{page}{1}
+\begin{document}
+\begin{center}
+    \large\textbf{Последовательность.}
+\end{center}
+\begin{center}
+    \large\textbf{Лемма о вложенных отрезках.}
+\end{center}
+ \indent Всякую функицию $f:\mathds{N}\shortrightarrow X$ будем называть \textbf{последовательностью} элементов множества $X$. Значение $f(n)$ называют n-ным членом последовательности и обычно обозначают через $x_{n}$. Саму последовательность будем обозначать $\{x_{n}\}$ и $x_{1}, x_{2},..., x_{n}, ...$\\\\
+    \indentПусть $X_{1}, X_{2},..., X_{n},...$  { }{ }{ }{ }{ }{ }- { } { }{ }{ }
+ последовательность каких-либо множеств. Если $X_{1}\supset X_{2}\supset... \supset X_{n}\supset...,$ то говорят, что имеется последовательность \textbf{вложенных} множеств.\\\\
+\noindent Множество, состоящее из конечного числа элементов, называется \textbf{конечным}. Множества, не являющиеся конечными, называются \textbf{бесконечными.}\\\\
+\noindent Любой интервал $(a;b) = \{x\in \mathds{R}: a < x < b\}$, содержащий данную точку $c$ называется \textbf{окрестностью} этой точки. Точка $x_{0}$ называется предельной точкой множества $M \subset \mathds{R}$, если любая окрестность этой точки содержит бесконечное множество точек множества $M$. \\\\
+\textbf{Лемма} (Коши - Кантор, лемма о вложенных отрезках) Для любой последовательности $I_{1}\supset I_{2}\supset... \supset I_{n}\supset...$ вложенных отрезков найдется такая точка $c \in \mathds{ R }$, принадлежащая всем этим отрезкам. Более того, если для любого числа $\upvarepsilon > 0$ существует отрезок $I_{n}$, длинна которого $|I_{n}| < \upvarepsilon$, то $c$ единственная общая точка для всех отезков.\\\\
+\indent \textbf{Доказательство.} Пусть $I_{n}=[ a_{n} ; b_{n} ]=\{x \in \mathds R: a_{n}\leqslant x\leqslant b_{n}\}$. Обозначим $X = \{a_{n}\}, Y=\{b_{n}\}$ Проверим, что $a_{m} \leqslant b_{n},\forall m,n \in \mathds N.$ Действительно, предположим, что существуют такие $m,n \in \mathds N$, что $a_{m} > b_{n}$. Тогда $b_{m} \geqslant a_{m} > b_{n} \geqslant a_{n}$. И мы получаем, что отрезки $I_{m} $ и $I_{n}$ не пересекаются, что не может быть по условию. Таким образом, в силу аксиомы поллноты, существует число $c \in \mathds R$ такое, что $a_{n} \leqslant c \leqslant b_{n}, \forall m, n \in \mathds N$. В частности $a_{n} \leqslant c \leqslant b_{n}, \forall n \in \mathds N$. Итак, $ c \in I_{n}, \forall n \in \mathds N$. \\\\
+\noindent Предположим теперь, что существуют $c_{1}, c_{2} \in \cap_{n=1}^{+\infty} I_{n}$ и $c_{1} < c_{2}$. Тогда имеем $a_{n} \leqslant c_{1} < c_{2} \leqslant b_{n} \Rightarrow 0 < c_{2} - c_{1} \leqslant b_{n} - a_{n}, \forall  n$. Т.е. длинна каждого отрезка не может быть меньше положительной величины $c_{2} - c_{1}$. Но это не может быть, если в системе отрезков есть отрезки сколь угодно малой длинны. \textbf{Лемма доказанна}. \\\\
+\newpage
+\begin{center}
+    \large\textbf{Критерий Коши существования придела функции.}
+\end{center}
+\noindent \textbf{Теорема} (критерий Коши существования придела функции)\\\\
+\noindent Пусть $a$ предельна точка множества $E$.Функция $f: E \to \mathds R$ имеет конечный предел при $x \to a$ тогда и только тогда, когда
+\begin{equation*}
+    \forall \upvarepsilon > 0 \;  \exists \delta > 0 \;  \forall x, x^{\prime} \in E, \; 0 < |x - a| < \delta, 0 < |x^{\prime} - a| < \delta \Rightarrow |f(x^{\prime}) - f(x)| < \upvarepsilon .
+\end{equation*}
+
+\indent \textbf{Доказательство}. Пусть существует конечный предел
+   \textbf Доказательство. Пусть существует конечный предел $ \lim_{x \to \textbeta}f(x) = A.$ Тогда  
+\begin{equation*}
+    \forall \upvarepsilon > 0 \;  \exists \delta > 0 \;  \forall x, x^{\prime} \in E, \; 0 < |x - a| < \delta, 0 < |x^{\prime} - a| < \delta
+    \Rightarrow |f(x) - A| < \upvarepsilon / 2
+\end{equation*}
+\begin{equation*}
+    \Rightarrow |f(x) - A| < \upvarepsilon / 2  ; |f(x^{\prime} - A| < \upvarepsilon / 2 \Rightarrow
+\end{equation*}
+\begin{equation*}
+     |f(x^{\prime}) - f(x)| < \upvarepsilon
+\end{equation*}
+\noindent Пусть выподняется условие в теореме. Возьмем произвольную последовательность $\{ x_{n} \}, x_{n} \in E / \{a\}, x \to a, n \to \infty$. Возьмём произвольное число $\upvarepsilon > 0$ и найдём по нему число $\delta > 0$ в соответсвии с условтем теоремы.\\\\
+\begin{equation*}
+     \lim_{n\to \infty}x_{n} = a, x_{n} \in E / \{a\} \Rightarrow \exists N \in \mathds{N} : \forall n > N \Rightarrow 0 < |x_{n} - a| < \delta.
+\end{equation*}
+\noindent Поэтому для $\forall n,m > N \Rightarrow |f(x_{n}) - f(x_{m})| < \upvarepsilon$. Таким образом, последовательность $\{ f(x_{n})\}$ фундаментальна, значит, имеет предел. Остается доказать, что для разных последовательностей такой предел будет одним и тем же.\\\\
+\noindent Предположим, что \\\\
+\begin{equation*}
+    \{ x_{n} \}, x_{n} \in E/\{a\}, x_{n} \to a, n \to \infty, \lim_{n \to \infty}f(x_{n}) = A;
+\end{equation*}
+\begin{equation*}
+    \{ x_{n}^{\prime} \}, x_{n}^{\prime} \in E/\{a\}, x_{n}^{\prime} \to a, n \to \infty, \lim_{n \to \infty}f(x_{n}^{\prime}) = A^{\prime};
+\end{equation*}\\
+\noindent Составим новую последовательность $x_{1}, x_{1}^{\prime}, x_{2}, x_{2}^{\prime},...,x_{n}, x_{n}^{\prime},...$. Она сходится к $a$ и, по доказанному, последовательность $f(x_{1}), f(x_{1}^{\prime}),f(x_{2}), f(x_{2}^{\prime}),...,f(x_{n}), f(x_{n}^{\prime})...$ должна сходиться, скажем, к числу $A^{\prime \prime}$. Но тогда любая её подпоследовательность должна сходиться к этому же предему. Таким образом, $A=A^{\prime}=A^{\prime \prime}$.\textbf{Теорема доказана.}
+\end{document}
